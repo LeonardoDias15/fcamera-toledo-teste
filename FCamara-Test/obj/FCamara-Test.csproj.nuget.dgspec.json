@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acaciano\\Desktop\\FCamara_Test\\FCamara-Test\\FCamara-Test\\FCamara-Test.csproj": {}
+    "C:\\Projects\\fcamera-toledo-teste\\FCamara-Test\\FCamara-Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acaciano\\Desktop\\FCamara_Test\\FCamara-Test\\FCamara-Test\\FCamara-Test.csproj": {
+    "C:\\Projects\\fcamera-toledo-teste\\FCamara-Test\\FCamara-Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acaciano\\Desktop\\FCamara_Test\\FCamara-Test\\FCamara-Test\\FCamara-Test.csproj",
+        "projectUniqueName": "C:\\Projects\\fcamera-toledo-teste\\FCamara-Test\\FCamara-Test.csproj",
         "projectName": "FCamara-Test",
-        "projectPath": "C:\\Users\\acaciano\\Desktop\\FCamara_Test\\FCamara-Test\\FCamara-Test\\FCamara-Test.csproj",
+        "projectPath": "C:\\Projects\\fcamera-toledo-teste\\FCamara-Test\\FCamara-Test.csproj",
         "packagesPath": "C:\\Users\\acaciano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acaciano\\Desktop\\FCamara_Test\\FCamara-Test\\FCamara-Test\\obj\\",
+        "outputPath": "C:\\Projects\\fcamera-toledo-teste\\FCamara-Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acaciano\\AppData\\Roaming\\NuGet\\NuGet.Config",

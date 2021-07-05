@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "03ijb2vOAv6KqTcoHLCbJM9uzYwWfG/+2ahblnBkiESs+4fYyEc6JyK4ZtTnygjsHeW6i0PXhZucu8RvsQF0IA==",
+  "dgSpecHash": "BQq4d+aMKAx1DFv09lfXRxVCDffdLRsXy4hO03EcTLh47gAu2NDo6PbskhYFfgWO89dVepRHF1oLwcTZ0pqE8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\acaciano\\Desktop\\FCamara_Test\\FCamara-Test\\FCamara-Test\\FCamara-Test.csproj",
+  "projectFilePath": "C:\\Projects\\fcamera-toledo-teste\\FCamara-Test\\FCamara-Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acaciano\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\acaciano\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
