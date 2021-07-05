@@ -1,0 +1,110 @@
+﻿@model Funcionario
+@{
+    ViewData["Title"] = "Novo Funcionário";
+}
+
+<div class="content">
+
+    <div class="lista-botoes">
+        <a class="botao" asp-action="Index" asp-controller="Funcionario">Voltar</a>
+    </div>
+
+    <br />
+    <h1>Cadastro de funcionário</h1>
+
+    @if (!string.IsNullOrEmpty(ViewBag.Erro))
+    {
+        <div class="mensagem-erro">
+            <span>@ViewBag.Erro</span>
+        </div>
+    }
+
+    <div>
+        <form asp-action="CadastrarFuncionario" asp-controller="Funcionario">
+            <fieldset>
+                <legend>Dados do funcionário:</legend>
+                <div class="box-form">
+
+                    <div class="filtro">
+
+                        <div class="box-campo">
+                            <label>Nome do funcionário</label>
+                            <input type="text" asp-for="Nome" class="campo-texto" />
+                        </div>
+
+                        <div class="box-campo">
+                            <label>CPF do funcionário</label>
+                            <input type="text" asp-for="CPF" class="campo-texto" />
+                        </div>
+
+                        <div class="box-campo">
+                            <label>Data de nascimento</label>
+                            <input type="text" asp-for="DataNascimento" class="campo-texto" />
+                        </div>
+
+                        <div class="box-campo">
+                            <label>Sexo</label>
+                            <select class="campo-texto" asp-for="Sexo">
+                                <option value="0">Selecione</option>
+                                <option value="F">F</option>
+                                <option value="M">M</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filtro">
+                        <div class="box-campo">
+                            <label>CEP</label>
+                            <input type="text" onblur="buscarCep(this.value)" asp-for="Cep" class="campo-texto" />
+                        </div>
+
+                        <div class="box-campo">
+                            <label>Endereço</label>
+                            <input type="text" asp-for="Endereco" class="campo-texto" />
+                        </div>
+
+                        <div class="box-campo">
+                            <label>Bairro</label>
+                            <input type="text" asp-for="Bairro" class="campo-texto" />
+                        </div>
+
+                        <div class="box-campo">
+                            <label>Número</label>
+                            <input type="text" asp-for="Numero" class="campo-texto" />
+                        </div>
+
+                    </div>
+
+                    <div class="filtro">
+                        <div class="box-campo">
+
+                            <div class="box-campo">
+                                <label>Complemento</label>
+                                <input type="text" asp-for="Complemento" class="campo-texto" />
+                            </div>
+
+                            <div class="box-campo">
+                                <label>Estado</label>
+                                <input type="text" asp-for="Estado" class="campo-texto" />
+                            </div>
+
+                            <div class="box-campo">
+                                <label>Cidade</label>
+                                <input type="text" asp-for="Cidade" class="campo-texto" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <button class="botao" style="width:100%;">Cadastrar</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+
+</div>

@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Funcionários";
+}
+
+<div class="content">
+
+    <div class="lista-botoes">
+        <a class="botao" asp-action="Novo" asp-controller="Funcionario">Adicionar novo funcionário</a>
+    </div>
+
+    <br />
+    <h1>Listagem de funcionários</h1>
+
+    <div>
+        <form>
+            <div class="box-form">
+
+                <div class="filtro">
+
+                    <div class="box-campo">
+                        <label>Nome do funcionário</label>
+                        <input type="text" id="nome" class="campo-texto" />
+                    </div>
+
+                    <div class="box-campo">
+                        <label>Sexo</label>
+                        <select class="campo-texto" id="sexo">
+                            <option value="ambos">Ambos</option>
+                            <option value="F">F</option>
+                            <option value="M">M</option>
+                        </select>
+                    </div>
+
+                    <div class="box-campo">
+                        <label> Ativo</label>
+                        <select class="campo-combo" id="ativo">
+                            <option value="ambos">Ambos</option>
+                            <option value="1">Sim</option>
+                            <option value="0">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="box-campo">
+                        <label>
+                            Exibir apenas os funcionários que não possuem
+                            dependentes.
+                        </label>
+                        <select class="campo-combo" id="naoPossuemDependencias">
+                            <option selected="selected" value="0">Não</option>
+                            <option value="1">Sim</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="filtro-botao">
+                    <div class="conteudo-filtro-botao">
+                        <a class="botao" style="padding: 10px;" onclick="buscarFuncionarios()" >Buscar</a>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="partialListagemFuncionarios"></div>
+
+</div>

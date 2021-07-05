@@ -1,0 +1,246 @@
+﻿
+/*Inicio Estilo do menu*/
+
+.menu {
+    background: #424251;
+    padding: 15px;
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    padding:10px;
+}
+
+.menu li a {
+    color:#FFF;
+    text-decoration:none;
+}
+
+.menu li a:hover {
+    color: #CCCCCC;
+}
+
+/*Fim Estilo do menu*/
+
+
+
+/*Inicio Rodape */
+
+.rodape {
+    display: flex;
+    height: 100px;
+    background: #424251;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.rodape-conteudo {
+    color: #fff;
+    text-align: center;
+}
+
+/*Fim Rodape */
+
+
+/*Inicio Conteudo Pagina */
+
+.container {
+    padding: 10px;
+}
+
+.container h1 {
+    font-size: 20px;
+    color: #424251;
+}
+
+.botao {
+    background: #424251;
+    color: #fff;
+    min-width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background: #646473;
+}
+
+.excluir {
+    background: #8C0000;
+}
+
+.excluir:hover {
+    background: #B90000;
+}
+
+.box-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtro {
+    width: 50%;
+    padding: 10px;
+}
+
+.filtro label {
+    font-weight: bold;
+    font-size:12px;
+}
+
+.filtro-botao {
+    width: 50%;
+    padding: 10px;
+}
+
+.conteudo-filtro-botao {
+    margin-top: 122px;
+    margin-left: 100px;
+}
+
+.aniversariantes {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.box-campo {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.box-campo label {
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+.campo-texto {
+    background: #414151;
+    padding: 5px;
+    color: #fff;
+    border:0;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.campo-combo {
+    background: #414151;
+    padding: 5px;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.mensagem-erro {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 17px;
+    border-radius: 29px;
+    margin-bottom: 13px;
+}
+
+.mensagem-erro span {
+    font-size: 18px;
+}
+
+.mensagem-sucesso {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 17px;
+    border-radius: 29px;
+    margin-bottom: 13px;
+}
+
+.mensagem-sucesso span {
+    font-size: 18px;
+}
+
+
+code, pre {
+    background-color: #eee;
+}
+
+pre {
+    border-left: 6px solid #424251;
+    line-height: 1.4;
+    margin: 0 0 24px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 24px;
+}
+
+.rTable {
+    width: 100%;
+    text-align: center;
+}
+
+.rTable thead {
+    background: #424251;
+    font-weight: bold;
+    color: #fff;
+}
+
+.rTable tbody tr:nth-child(2n) {
+    background: #ccc;
+}
+
+.rTable th, .rTable td {
+    padding: 7px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        width: 94%;
+    }
+
+    .rTable thead {
+        display: none;
+    }
+
+    .rTable tbody td {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .content {
+        width: 100%;
+    }
+
+    .rTable tbody tr td:nth-child(1) {
+        width: 10%;
+    }
+
+    .rTable tbody tr td:nth-child(2) {
+        width: 30%;
+    }
+
+    .rTable tbody tr td:nth-child(3) {
+        width: 20%;
+    }
+
+    .rTable tbody tr td:nth-child(4) {
+        width: 10%;
+    }
+
+    .rTable tbody tr td:nth-child(5) {
+        width: 30%;
+    }
+}
+
+/*Fim da Tabela */
+
+/*Fim Conteudo Pagina */

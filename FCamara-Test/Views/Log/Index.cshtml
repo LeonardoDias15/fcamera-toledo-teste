@@ -1,0 +1,46 @@
+﻿@using Newtonsoft.Json;
+@model List<HistoricoAuditoria>
+@{
+    ViewData["Title"] = "Logs";
+}
+
+<div class="content">
+
+    <h1>Listagem de logs</h1>
+
+    <table class="rTable">
+        <thead>
+            <tr>
+                <th>Funcionalidade</th>
+                <th>Identificador da funcionalidade</th>
+                <th>Ação</th>
+                <th>Data cadastro</th>
+                <th>Conteudo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (HistoricoAuditoria historicoAuditoria in Model)
+                {
+                    <tr>
+                        <td>@historicoAuditoria.Funcionalidade</td>
+                        <td>@historicoAuditoria.IdentificadorFuncionalidade</td>
+                        <td>@historicoAuditoria.Evento</td>
+                        <td>@historicoAuditoria.DataCadastro.ToString("g")</td>
+                        <td>
+                            @historicoAuditoria.Dados
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="4">Nenhum registro  encontrado</td></tr>
+            }
+        </tbody>
+    </table>
+
+
+</div>

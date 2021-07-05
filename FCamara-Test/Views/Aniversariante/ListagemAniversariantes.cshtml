@@ -1,0 +1,31 @@
+﻿@model List<FCamara_Test.Dtos.AniversarianteDTO>
+
+<table class="rTable">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Data aniversário</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (FCamara_Test.Dtos.AniversarianteDTO aniversariante in Model)
+            {
+                <tr>
+                    <td>@aniversariante.Nome</td>
+                    <td>@aniversariante.Cpf</td>
+                    <td>@aniversariante.DataNascimento.ToString("g")</td>
+                </tr>
+
+            }
+        }
+        else
+        {
+            <tr><td colspan="3">Nenhum registro  encontrado</td></tr>
+        }
+
+    </tbody>
+</table>
+

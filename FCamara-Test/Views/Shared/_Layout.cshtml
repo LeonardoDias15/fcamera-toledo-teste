@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FCamara/Toledo - Teste Leonardo</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a asp-action="Index" asp-controller="Funcionario">Funcionários</a></li>
+            <li><a asp-action="Index" asp-controller="Aniversariante">Aniversariantes</a></li>
+            <li><a asp-action="Index" asp-controller="Log">Logs</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            &copy; 2021 - FCamara/Toledo - Teste Leonardo
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/jquery.mask.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

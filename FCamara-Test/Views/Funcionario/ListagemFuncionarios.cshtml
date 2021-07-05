@@ -1,0 +1,40 @@
+﻿@model List<Funcionario>
+
+<table class="rTable">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Sexo</th>
+            <th>Status</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @if (Model != null && Model.Any())
+        {
+            foreach (Funcionario funcionario in Model)
+            {
+                <tr>
+                    <td>@funcionario.Nome</td>
+                    <td>@funcionario.CPF</td>
+                    <td>@funcionario.Sexo</td>
+                    <td>@(funcionario.Ativo ? "Ativo" : "Inativo")</td>
+                    <td>
+                        <a class="botao" asp-route-id="@funcionario.Id" asp-action="MostrarDependentes" asp-controller="Funcionario">Dependentes</a>
+                        <a class="botao" asp-route-id="@funcionario.Id" asp-action="NovoDependente" asp-controller="Funcionario">Novo dependente</a>
+                        <a class="botao" asp-route-id="@funcionario.Id" asp-action="Editar" asp-controller="Funcionario">Editar</a>
+                        <a class="botao excluir" asp-route-id="@funcionario.Id" asp-action="Excluir" asp-controller="Funcionario">Excluir</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="5">Nenhum registro  encontrado</td></tr>
+        }
+
+    </tbody>
+</table>
